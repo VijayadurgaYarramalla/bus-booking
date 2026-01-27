@@ -1,0 +1,206 @@
+/* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Body ===== */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #74b9ff, #a29bfe);
+  min-height: 100vh;
+}
+
+/* ===== App Container (3D Card) ===== */
+.app {
+  max-width: 900px;
+  margin: 40px auto;
+  background: linear-gradient(145deg, #ffffff, #f1f2f6);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+/* ===== Headings ===== */
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #2d3436;
+}
+
+h2 {
+  margin: 20px 0 10px;
+  color: #0984e3;
+}
+
+/* ===== Bus Card ===== */
+.bus-card {
+  background: linear-gradient(145deg, #f1f2f6, #ffffff);
+  padding: 16px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow:
+    8px 8px 16px #d1d9e6,
+    -8px -8px 16px #ffffff;
+  transition: all 0.3s ease;
+}
+
+.bus-card:hover {
+  transform: translateY(-5px);
+  box-shadow:
+    12px 12px 24px #c8d0dc,
+    -12px -12px 24px #ffffff;
+}
+
+/* ===== Buttons (Common) ===== */
+button {
+  padding: 10px 18px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+/* ===== Select Button ===== */
+.select-btn {
+  background: linear-gradient(145deg, #0984e3, #74b9ff);
+  color: white;
+  box-shadow: 0 6px 15px rgba(9, 132, 227, 0.5);
+}
+
+.select-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* ===== Seat Section ===== */
+.seats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.seat {
+  background: linear-gradient(145deg, #e6e9ef, #ffffff);
+  border-radius: 10px;
+  padding: 12px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow:
+    6px 6px 12px #cfd6e0,
+    -6px -6px 12px #ffffff;
+  transition: all 0.2s ease;
+}
+
+.seat:hover {
+  transform: translateY(-3px);
+}
+
+.seat.selected {
+  background: linear-gradient(145deg, #00b894, #55efc4);
+  color: white;
+  box-shadow:
+    inset 4px 4px 8px rgba(0,0,0,0.2),
+    inset -4px -4px 8px rgba(255,255,255,0.3);
+}
+
+/* ===== Booking Summary Card ===== */
+.summary {
+  margin-top: 25px;
+  padding: 25px;
+  background: linear-gradient(145deg, #ffffff, #f1f2f6);
+  border-radius: 16px;
+  box-shadow:
+    10px 10px 25px #cfd6e0,
+    -10px -10px 25px #ffffff;
+}
+
+/* ===== Summary Text ===== */
+.summary p {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+.total {
+  font-size: 18px;
+  font-weight: bold;
+  color: #d63031;
+}
+
+/* ===== Passenger Form Fields ===== */
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 14px;
+}
+
+.field label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #2d3436;
+}
+
+.field input,
+.field select {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background: #f1f2f6;
+  box-shadow:
+    inset 6px 6px 12px #d1d9e6,
+    inset -6px -6px 12px #ffffff;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.field input:focus,
+.field select:focus {
+  outline: none;
+  background: #ffffff;
+  box-shadow:
+    0 0 0 2px #0984e3,
+    inset 4px 4px 8px #dfe6e9;
+}
+
+/* ===== Pay Now Button (3D) ===== */
+.pay-btn {
+  width: 100%;
+  margin-top: 15px;
+  padding: 14px;
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 12px;
+  color: white;
+  background: linear-gradient(145deg, #6c5ce7, #0984e3);
+  box-shadow:
+    0 12px 25px rgba(108, 92, 231, 0.6),
+    inset 0 2px 4px rgba(255, 255, 255, 0.4);
+}
+
+.pay-btn:hover {
+  transform: translateY(-3px) scale(1.02);
+}
+
+.pay-btn:active {
+  transform: translateY(1px);
+  box-shadow: inset 4px 4px 10px rgba(0,0,0,0.3);
+}
+
+/* ===== Success Message ===== */
+.success-msg {
+  margin-top: 18px;
+  padding: 12px;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #55efc4, #00b894);
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 184, 148, 0.6);
+}

@@ -64,7 +64,7 @@ const BookingSummary = () => {
           Pay Now ₹{totalPrice}
         </button>
       ) : (
-        <p className="success-msg">✅ Payment Successful! Ticket Booked</p>
+        <p className="success-msg"> Payment Successful! Ticket Booked</p>
       )}
     </div>
   );
